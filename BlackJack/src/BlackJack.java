@@ -199,7 +199,6 @@ public class BlackJack extends Application {
         playerTotalText.setText("Player Total: " + reducePlayerAce());
         dealerTotalText.setText("Dealer Total: ?");
 
-        // this will check for an instant blackjack
         if (reducePlayerAce() == 21 && playerHand.size() == 2) {
             resultText.setText("Blackjack! You Win!");
 
